@@ -14,15 +14,16 @@ import Result from '../result/result.js';
     const handleSubmit = (event) => {
       //to save the data come from the form  in each time i change it 
       event.preventDefault();
-      console.log(formData.url)
-      console.log(formData.body)
-      console.log(formData.method)
+      
        formData.method= event.target.method.value;
        formData.url=event.target.url.value;
        formData.body=`{Name : "marah",age :26 ,major : "cs}`;
+       console.log("home===> "+formData.url)
+      console.log(formData.body)
+      console.log(formData.method)
       }
     //==================================
-   
+    
     return (
       <>
         <Form  handleSubmit={handleSubmit}  />
