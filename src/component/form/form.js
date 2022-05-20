@@ -44,10 +44,10 @@ function Form(props) {
                 <button type="submit"  onClick={!props.isloading ? props.handleClick : null}  > {method}  </button>
             </div>
             <div className="methods">
-                <button onClick={handleMethod} className="method" id="GET" name ="GET" >GET</button>
-                <button onClick={handleMethod} className="method" id="POST" name = "POST" >POST</button>
-                <button onClick={handleMethod} className="method" id="PUT" name = "PUT" >PUT</button>
-                <button onClick={handleMethod} className="method" id="DELETE" name = "DELETE" >DELETE</button>
+                <button onClick={handleMethod} className="method" id="GET" name ="method" >GET</button>
+                <button onClick={handleMethod} className="method" id="POST" name = "method" >POST</button>
+                <button onClick={handleMethod} className="method" id="PUT" name = "method" >PUT</button>
+                <button onClick={handleMethod} className="method" id="DELETE" name = "method" >DELETE</button>
 
             </div>
             <textarea name="body" onChange={handleBody} id="textdata"defaultValue="{}"/>
