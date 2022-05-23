@@ -36,7 +36,7 @@ import superagent from 'superagent';// to fetch Data from Api
 const loading = () => {return new Promise((resolve) => setTimeout(resolve, 1800));}
     return (
       <>
-        <Form handleClick={handleClick} handleApiCall={handleApiCall}  />
+        <Form newHistory ={props.newHistory} handleClick={handleClick} handleApiCall={handleApiCall}  />
      <Result loading={isloading}  data={data}  url={requestParams.url} header={header}  method={requestParams.method} />
       </>
     );
