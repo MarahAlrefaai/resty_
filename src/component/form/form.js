@@ -21,6 +21,16 @@ function Form(props) {
       url: url,
       body: null
     };
+    const action={
+      payload :{
+        method:formData.method,
+        url :formData.url,
+        body:formData.body,
+              
+      }
+       
+    }
+    props.newHistory(action.payload);
     if (body) 
     {formData.body = body;}
     props.handleApiCall(formData);//send the data to this function to use it in axios 
